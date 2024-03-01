@@ -1,0 +1,33 @@
+.fa-share {
+        font-size: 20px; 
+        background-color: $light_grayish_blue;
+        color: $very_dark_grayish_blue;
+        border-radius: 50%;
+        padding: 10px;
+
+        &:focus {
+            color: $white;
+            background-color: $desaturated_dark_blue;
+        }
+    }
+
+#share_item {
+    @include flex-space-row;
+    background-color: $very_dark_grayish_blue;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-top: 10px;
+
+    #text {
+        text-transform: uppercase;
+        font-weight: 800;
+        color: $grayish_blue;
+        letter-spacing: 5px;
+    }
+    i {
+        width: 15px;
+        height: 15px;
+        color: $white;
+        margin-left: 10px;
+    }
+}

@@ -1,0 +1,106 @@
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  background-color: hsl(210, 46%, 95%);
+}
+
+footer {
+  text-align: center;
+}
+footer .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+footer .attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+#card_presentation {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+#card_presentation #img_caractere {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+#card_presentation #text_caractere {
+  margin-right: 20px;
+}
+
+.fa-share {
+  font-size: 20px;
+  background-color: hsl(210, 46%, 95%);
+  color: hsl(217, 19%, 35%);
+  border-radius: 50%;
+  padding: 10px;
+}
+.fa-share:focus {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(214, 17%, 51%);
+}
+
+#share_item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: hsl(217, 19%, 35%);
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+#share_item #text {
+  text-transform: uppercase;
+  font-weight: 800;
+  color: hsl(212, 23%, 69%);
+  letter-spacing: 5px;
+}
+#share_item i {
+  width: 15px;
+  height: 15px;
+  color: hsl(0, 0%, 100%);
+  margin-left: 10px;
+}
+
+main {
+  width: 60%;
+  margin: 70px auto;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media screen and (max-width: 375px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+main #drawers_img {
+  width: 50%;
+  border-radius: 20px 0px 0px 20px;
+}
+@media screen and (max-width: 375px) {
+  main #drawers_img {
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+  }
+}
+main #card_text {
+  width: 50%;
+  margin: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */

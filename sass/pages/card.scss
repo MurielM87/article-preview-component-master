@@ -1,0 +1,26 @@
+main {
+    width: 60%;
+    margin: 70px auto;
+    background-color: $white;
+    border-radius: 20px;
+    @include flex-space-row;
+    
+    @media screen and (max-width : map-get($breakpoints, mobile)) {
+        @include flex-space-column;
+    }
+
+    #drawers_img {
+        width: 50%;
+        border-radius: 20px 0px 0px 20px;
+        @media screen and (max-width : map-get($breakpoints, mobile)) {
+            width: 100%;
+            border-radius: 20px 20px 0px 0px;
+        }
+    }
+
+    #card_text {
+        width: 50%;
+        margin: 20px;
+
+    }
+}

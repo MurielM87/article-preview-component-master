@@ -1,0 +1,14 @@
+#card_presentation {
+    @include flex-start-row;
+    margin-top: 20px;
+
+    #img_caractere {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        margin-right: 20px;
+    }
+    #text_caractere {
+        margin-right: 20px;
+    }
+}

@@ -1,0 +1,13 @@
+@import "utils/responsive.scss";
+@import "utils/variables.scss";
+@import "utils/mixins.scss";
+
+@import "bases/normalize.scss";
+@import "bases/body.scss";
+
+@import "layout/footer.scss"; 
+
+@import "components/card_presentation.scss";
+@import "components/share_item.scss";
+
+@import "pages/card.scss";
