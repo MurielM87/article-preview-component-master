@@ -1,33 +1,81 @@
 .fa-share {
-        font-size: 20px; 
-        background-color: $light_grayish_blue;
-        color: $very_dark_grayish_blue;
-        border-radius: 50%;
-        padding: 10px;
+  font-size: 20px;
+  background-color: $light_grayish_blue;
+  color: $very_dark_grayish_blue;
+  border-radius: 50%;
+  padding: 10px;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  @media screen and (max-width: map-get($breakpoints, mobile)) {
+    top: 10px;
+    right: 0;
+  }
 
-        &:focus {
-            color: $white;
-            background-color: $desaturated_dark_blue;
-        }
-    }
+  &:active {
+    color: $white;
+    background-color: $desaturated_dark_blue;
+  }
+}
+
 
 #share_item {
-    @include flex-space-row;
-    background-color: $very_dark_grayish_blue;
-    padding: 10px 20px;
-    border-radius: 20px;
-    margin-top: 10px;
+  display: none;
+  flex-direction: row;
+  justify-content: space-between;
+  position: absolute;
+  z-index: 1;
+  background-color: $very_dark_grayish_blue;
+  padding: 10px 20px;
+  border-radius: 10px;
+  bottom: 50px;
+  right: -70px;
+  margin-top: 10px;
 
-    #text {
-        text-transform: uppercase;
-        font-weight: 800;
-        color: $grayish_blue;
-        letter-spacing: 5px;
+ 
+  @media screen and (max-width: map-get($breakpoints, mobile)) {
+    justify-content: start;
+    align-items: center;
+    width: 121%;
+    top: -10px;
+    left: -20px;
+    padding: 30px;
+    border-radius: 0px 0px 20px 20px;
+  }
+
+  #text {
+    text-transform: uppercase;
+    font-weight: 800;
+    color: $grayish_blue;
+    letter-spacing: 5px;
+    @media screen and (max-width: map-get($breakpoints, mobile)) {
+      color: $grayish_blue;
     }
-    i {
-        width: 15px;
-        height: 15px;
-        color: $white;
-        margin-left: 10px;
+  }
+  i {
+    width: 15px;
+    height: 15px;
+    color: $white;
+    margin-left: 10px;
+    @media screen and (max-width: map-get($breakpoints, mobile)) {
+      width: 20px;
+      height: 20px;
     }
+  }
+}
+#triangle {
+  position: absolute;
+  right: 80px;
+  top: 30px;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 15px 10px 0 10px;
+  border-color: $very_dark_grayish_blue transparent transparent transparent;
+  transform: rotate(0deg);
+
+  @media screen and (max-width: map-get($breakpoints, mobile)) {
+    display: none;
+  }
 }

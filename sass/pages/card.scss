@@ -1,26 +1,48 @@
 main {
-    width: 60%;
-    margin: 70px auto;
-    background-color: $white;
-    border-radius: 20px;
-    @include flex-space-row;
-    
-    @media screen and (max-width : map-get($breakpoints, mobile)) {
-        @include flex-space-column;
+  width: 60%;
+  margin: 70px auto;
+  background-color: $white;
+  border-radius: 20px;
+  @include flex-space-row;
+
+  @media screen and (max-width: map-get($breakpoints, mobile)) {
+    @include flex-space-column;
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  #drawers_img {
+    width: 50%;
+    border-radius: 20px 0px 0px 20px;
+    @media screen and (max-width: map-get($breakpoints, mobile)) {
+      width: 100%;
+      border-radius: 20px 20px 0px 0px;
+    }
+  }
+
+  #card_text {
+    width: 50%;
+    margin: 20px;
+    @media screen and (max-width: map-get($breakpoints, mobile)) {
+      width: 90%;
+      padding-right: 20px;
+    }
+    .show {
+      display: flex;
     }
 
-    #drawers_img {
-        width: 50%;
-        border-radius: 20px 0px 0px 20px;
-        @media screen and (max-width : map-get($breakpoints, mobile)) {
-            width: 100%;
-            border-radius: 20px 20px 0px 0px;
-        }
+    h1 {
+      color: $very_dark_grayish_blue;
+      line-height: 25px;
+      @media screen and (max-width: map-get($breakpoints, mobile)) {
+        font-size: 16px;
+      }
     }
 
-    #card_text {
-        width: 50%;
-        margin: 20px;
-
+    p {
+      color: $desaturated_dark_blue;
+      font-size: 14px;
+      line-height: 25px;
     }
+  }
 }
