@@ -59,15 +59,16 @@ footer .attribution a {
   top: 0;
   right: 0;
 }
+.fa-share:active, .fa-share:focus {
+  cursor: pointer;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(214, 17%, 51%);
+}
 @media screen and (max-width: 375px) {
   .fa-share {
     top: 10px;
     right: 0;
   }
-}
-.fa-share:active {
-  color: hsl(0, 0%, 100%);
-  background-color: hsl(214, 17%, 51%);
 }
 
 #share_item {

@@ -8,17 +8,18 @@
   z-index: 2;
   top: 0;
   right: 0;
+
+  &:active,
+  &:focus {
+    cursor: pointer;
+    color: $white;
+    background-color: $desaturated_dark_blue;
+  }
   @media screen and (max-width: map-get($breakpoints, mobile)) {
     top: 10px;
     right: 0;
   }
-
-  &:active {
-    color: $white;
-    background-color: $desaturated_dark_blue;
-  }
 }
-
 
 #share_item {
   display: none;
@@ -33,7 +34,6 @@
   right: -70px;
   margin-top: 10px;
 
- 
   @media screen and (max-width: map-get($breakpoints, mobile)) {
     justify-content: start;
     align-items: center;
